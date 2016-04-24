@@ -1,0 +1,25 @@
+<template name="themeSwitcher">
+
+    <select class="form-control">
+
+        {{#each themes}}
+            {{#if disabled }}
+                <option value="{{href}}">{{href}}</option>
+            {{else}}
+                <option value="{{href}}" selected>{{href}}</option>
+            {{/if}}
+
+        {{/each}}
+
+    </select>
+
+    {{#each themes}}
+        {{#if disabled }}
+            <link rel="stylesheet" href={{href}} disabled="disabled">
+        {{else}}
+            <link rel="stylesheet" href={{href}}>
+        {{/if}}
+
+    {{/each}}
+
+</template>

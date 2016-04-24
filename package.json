@@ -2,11 +2,19 @@
   "name": "meteorApp",
   "private": true,
   "scripts": {
-    "start": "meteor run"
+    "start": "meteor run",
+    "postinstall": "./node_modules/npm-build-tools/bin/n-clean ./public/themes && ./node_modules/npm-build-tools/bin/n-copy -s ./node_modules/bootstrap-theuy-theme/dist -d ./public/themes '**/*' "
   },
   "dependencies": {
     "bootstrap-sass": "^3.3.6",
     "bootstrap-theuy-theme": "^1.0.0",
     "meteor-node-stubs": "~0.2.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-run-sequence": "^0.3.2",
+    "gulp-util": "^3.0.7",
+    "npm-build-tools": "^2.2.5"
   }
 }
