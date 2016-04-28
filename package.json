@@ -3,7 +3,8 @@
   "private": true,
   "scripts": {
     "start": "meteor run",
-    "postinstall": "./node_modules/npm-build-tools/bin/n-clean ./public/themes && ./node_modules/npm-build-tools/bin/n-copy -s ./node_modules/bootstrap-theuy-theme/dist -d ./public/themes '**/*' "
+    "postinstall": "./node_modules/npm-build-tools/bin/n-clean ./app/stylesheets/themes && ./node_modules/npm-build-tools/bin/n-copy -s ./node_modules/bootstrap-theuy-theme/dist -d ./app/stylesheets/themes '**/*' ",
+    "simple-webserver": "./node_modules/lr-http-server/bin/lr-http-server -d ./app"
   },
   "dependencies": {
     "bootstrap-sass": "^3.3.6",

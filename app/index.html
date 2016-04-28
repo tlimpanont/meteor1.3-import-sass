@@ -1,3 +1,19 @@
+<head>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+    <script src="scripts/jquery.theme-switcher.js"></script>
+    <link rel="stylesheet" href="stylesheets/themes/default/style.css">
+    <script>
+        jQuery(function() {
+            jQuery('#themeSwitcher').themeSwitcher({
+                themes: [
+                    { href: 'stylesheets/themes/darkly/style.css', disabled: true },
+                    { href: 'stylesheets/themes/flatly/style.css', disabled: true },
+                    { href: 'stylesheets/themes/default/style.css', disabled: false }
+                ]
+            });
+        })
+    </script>
+</head>
 <body>
 
 <div class="navbar navbar-default navbar-fixed-top">
@@ -16,7 +32,7 @@
                     <a href="javascript:void();">Theme switcher </a>
                 </li>
                 <li style="padding-top: 5px;">
-                    {{>themeSwitcher}}
+                    <select class="form-control" id="themeSwitcher"></select>
                 </li>
             </ul>
 
@@ -1262,4 +1278,3 @@
 </div>
 
 </body>
-
