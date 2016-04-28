@@ -6,9 +6,20 @@
     "postinstall": "./node_modules/npm-build-tools/bin/n-clean ./public/themes && ./node_modules/npm-build-tools/bin/n-copy -s ./node_modules/bootstrap-theuy-theme/dist -d ./public/themes '**/*' "
   },
   "dependencies": {
+    "angular2": "^2.0.0-beta.15",
+    "angular2-meteor": "^0.5.3",
+    "animate-sass": "git+https://github.com/tgdev/animate-sass.git",
     "bootstrap-sass": "^3.3.6",
     "bootstrap-theuy-theme": "^1.0.0",
-    "meteor-node-stubs": "~0.2.0"
+    "es6-shim": "^0.35.0",
+    "jquery": "^2.2.3",
+    "lodash": "^4.11.1",
+    "meteor-node-stubs": "^0.2.3",
+    "reflect-metadata": "^0.1.2",
+    "rxjs": "^5.0.0-beta.7",
+    "sizzle": "^2.3.0",
+    "underscore": "^1.8.3",
+    "zone.js": "^0.6.12"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
